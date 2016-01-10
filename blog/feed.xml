@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benjamin Söllner&#39;s Blog</title>
+    <description>Benjamin Söllner - multimedia computer scientist, integrator of data, IT and people, social dancer, amateur photographer and outdoor globetrotter. This is a blog about all interesting things I search and find.
+</description>
+    <link>http://benjaminsoellner.github.io/blog/</link>
+    <atom:link href="http://benjaminsoellner.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Jan 2016 16:42:02 +0100</pubDate>
+    <lastBuildDate>Sun, 10 Jan 2016 16:42:02 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>What will happen here?</title>
+        <description>&lt;p&gt;This is my personal blog. Over time, I will share some personal projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data Science projects, especially those from the &lt;a href=&quot;dand&quot;&gt;Data Analyst Nanodegree&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;IT Integration projects and experiences with &lt;a href=&quot;iic&quot;&gt;IBM Integration Products&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Observations and oppinions on other IT trends around Industry 4.0 and Big Data&lt;/li&gt;
+  &lt;li&gt;Multimedia side projects (photography and videography)&lt;/li&gt;
+  &lt;li&gt;Product Reviews&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You may also find the occasional story about my travels and life in
+the international trekking or dancing scene.&lt;/p&gt;
+
+&lt;p&gt;If you want to share your insights or ideas, do not hestitate to get in touch.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Jan 2016 15:12:09 +0100</pubDate>
+        <link>http://benjaminsoellner.github.io/blog/meta/2016/01/10/whats-going-on-here.html</link>
+        <guid isPermaLink="true">http://benjaminsoellner.github.io/blog/meta/2016/01/10/whats-going-on-here.html</guid>
+        
+        
+        <category>meta</category>
+        
+      </item>
+    
+  </channel>
+</rss>
