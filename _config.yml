@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   data, IT and people, social dancer, amateur photographer and
   outdoor globetrotter. This is a blog about all interesting
   things I search and find.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 picturl: "/assets/picture.jpg"
 url: "http://benjaminsoellner.github.io" # the base hostname & protocol for your site
 
