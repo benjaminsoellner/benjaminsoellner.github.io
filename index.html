@@ -1,24 +1,42 @@
 ---
-layout: default
+layout: page
+title: Benjamin S&ouml;llner
+subtitle: Blog &amp; Landing Page of a Curious Person
+tagline: Supporting tagline
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.description }}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+{% include JB/setup %}
+<div class="banner">
+<img src="assets/calmlandingpage.jpg" alt="Banner image from Sweden" />
+<div class="banner-text">
+  <p>Benjamin S&ouml;llner: multimedia computer scientist, integrator of data, IT and people, social dancer,
+  amateur photographer and outdoor globetrotter.</p>
+  <p>
+  {% include icon-linkedin.html username="LinkedIn" id="benjaminsoellner" %} &bullet;
+  {% include icon-github.html username="GitHub" id="benjaminsoellner" %} &bullet;
+  {% include icon-academia.html username="Academia" id="BenjaminSoellner" %} &bullet;
+  {% include icon-twitter.html username="Twitter" id="qwertzuhr" %} &bullet;
+  {% include icon-flickr.html username="Flickr" id="61423571@N00" %} &bullet;
+  <a href="about.html"><strong>more...</strong></a>
+  </p>
+  <p><em>Picture: L&acirc;ngberget, Sweden on New Year's Eve 2015/2016</em></p>
 </div>
+</div>
+
+{% for post in site.posts limit:1 %}
+  <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+  <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></h1>
+  {{ post.content }}
+{% endfor %}
+
+{% capture diff %}{{ site.posts | size | minus:2 }}{% endcapture %}
+{% unless diff contains '-' %}
+<h1>Recent Blog Posts</h1>
+{% for post in site.posts offset:1 limit:19 %}
+  <h1>Other Recent Posts</h1>
+  <span class="post-meta"></span>
+  <h2>
+    {{ post.date | date: "%b %-d, %Y" }}: <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></small>
+  </h2>
+   {{ post.description }}
+{% endfor %}
+{% endunless %}
