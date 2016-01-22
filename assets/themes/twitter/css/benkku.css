@@ -14,13 +14,15 @@ a.btn { text-decoration: none; }
 a.btn:hover, a.btn:active, a.btn:focus { text-decoration: none; }
 .tag_box a { background: #eee; color:black; border-radius: 3px; border: 1px solid #ccc; }
 .tag_box a:hover { color:#ED7D31; text-decoration: none; }
+.feed_box { float: right; }
+.feed_box .btn { font-size: 1.2em; font-weight: bold; }
 
 /* Pagination */
 .pagination li { border-radius: 3px; } 
 .pagination a { color: black; background: #eee; }
 .pagination a:hover { color: #ED7D31; background: #eee; text-decoration: none; }
 
-.social .icon { vertical-align: center; margin-right: 3px; font-size: 16px; text-decoration: none; }
+a .icon { vertical-align: center; margin-right: 0.2em; font-size: 16px; text-decoration: none; }
 footer .copyright { color: #888888;  } footer .copyright a { color: #888888;  } footer .copyright a:hover { color: #F19E65;  }
 
 /* Content stuff */

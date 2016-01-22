@@ -22,7 +22,11 @@ tagline: Supporting tagline
 </div>
 </div>
 
+
 {% for post in site.posts limit:1 %}
+  <div class="feed_box">
+  <a class="btn" href="rss.xml"><span class="icon fa fa-rss"></span>RSS Feed</a>
+  </div>
   <small>{{ post.date | date: "%b %-d, %Y" }}</small>
   <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></h1>
   {{ post.content }}
