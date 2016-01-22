@@ -5,8 +5,8 @@ subtitle: Blog &amp; Landing Page of a Curious Person
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-<div class="banner">
-<img src="assets/calmlandingpage.jpg" alt="Banner image from Sweden" />
+<div class="banner" style="width: 860px; height: 415px">
+<img src="assets/calmlandingpage.jpg" alt="Banner image from Sweden" width="860" height="415" />
 <div class="banner-text">
   <p>Benjamin S&ouml;llner: multimedia computer scientist, integrator of data, IT and people, social dancer,
   amateur photographer and outdoor globetrotter.</p>
@@ -24,13 +24,51 @@ tagline: Supporting tagline
 
 
 {% for post in site.posts limit:1 %}
+<div class="article">
   <div class="feed_box">
   <a class="btn" href="rss.xml"><span class="icon fa fa-rss"></span>RSS Feed</a>
   </div>
   <small>{{ post.date | date: "%b %-d, %Y" }}</small>
   <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></h1>
   {{ post.content }}
+</div>
 {% endfor %}
+
+<div class="tiles">
+<h1>Cool Creative Projects I Worked On</h1>
+<ul>
+  <li>
+    <a href="https://rawgit.com/benjaminsoellner/2015_Data_Analyst_Project_4/master/Data_Analysis_Project_4_-_Explorative_Data_Analysis_with_R.html" class="title"><img src="assets/project_explore_summarize_data.gif" />Explore and Summarize Data with R</a>
+    <a href="https://github.com/benjaminsoellner/DAND_4_ExplorativeDataAnalysisR"><span class="fa fa-github icon"></span>Github</a> &nbsp;
+    <a href="https://udacity-github-sync-content.s3.amazonaws.com/_submissions/90781_ttu7m.zip"><span class="fa fa-download icon"></span>Download</a>
+  </li>
+  <li>
+    <a href="https://htmlpreview.github.io/?https://github.com/benjaminsoellner/2015_Data_Analyst_Project_3/blob/master/Data%20Analysis%20Project%203%20-%20Data%20Wrangle%20OpenStreetMaps%20Data.html" class="title"><img src="assets/project_wrangle_osm_data.gif" />Wrangle Open Street Maps Data</a>
+    <a href="https://github.com/benjaminsoellner/DAND_3_OSMDataWranglingMongoDB"><span class="fa fa-github icon"></span>Github</a> &nbsp;
+    <a href="https://udacity-github-sync-content.s3.amazonaws.com/_submissions/63042_zwu24.zip"><span class="fa fa-download icon"></span>Download</a>
+  </li>
+  <li>
+    <a href="http://htmlpreview.github.io/?https://github.com/qwertzuhr/2015_Data_Analyst_Project_2/blob/master/Data_Analyst_Project_2_Soellner.html" class="title"><img src="assets/project_analyze_nyc_subway_data.gif" />Analyze New York City Subway Data</a>
+    <a href="https://github.com/benjaminsoellner/DAND_2_AnalyzingSubwayData"><span class="fa fa-github icon"></span>Github</a> &nbsp;
+    <a href="https://udacity-github-sync-content.s3.amazonaws.com/_submissions/35108_lcu49.zip"><span class="fa fa-download icon"></span>Download</a>
+  </li>
+  <li>
+    <a href="http://tinyurl.com/Enterprise20Slides" class="title"><img src="assets/project_at_esslingen_university.gif" />Enterprise 2.0: Social Software in Corporations</a>
+    <small>Course taught in 2013 and 2015 at Esslingen University of Applied Sciences</small> 
+  </li>
+  <li>
+    <a href="http://tinyurl.com/thesisBS" class="title"><img src="assets/project_at_tu_dresden.gif" />Search Engine Prototype for Car Dealerships</a>
+    <small>Master Thesis "Semantic Federation of Heterogenous Data Sources in Automotive Diagnostics"</small> 
+  </li>
+  <li>
+    <a href="http://tinyurl.com/mobilismedia" class="title"><img src="assets/project_at_tu_dresden.gif" />An App for Location Based Picture Sharing</a>
+    <small>Bachelor Thesis "XMPP-based Media Sharing for Mobile Collaboration with Android Phones"</small> 
+  </li>
+  <li class="one-liner">
+    <span><a href="portfolio_pre_2010.pdf" class="title"><span class="icon fa fa-file-pdf-o"></span>More from pre-2010...</a></span>
+  </li>
+</ul>
+</div>
 
 {% capture diff %}{{ site.posts | size | minus:2 }}{% endcapture %}
 {% unless diff contains '-' %}
