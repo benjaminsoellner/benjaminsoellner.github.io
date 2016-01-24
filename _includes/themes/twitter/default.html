@@ -11,25 +11,49 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     {% include JB/analytics %}
+    {% include hotjar %}
 
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/benkku.css" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/font-awesome.css" rel="stylesheet">
-
     
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="assets/favicon.ico">
-  <!-- Update these with your own images
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <meta name="description" content="SpaceX Webcast" />
+    
+    <meta name="abstract" content="{{page.description}}" />
+    <meta name="keywords" content="{{page.tags}}" />
+    <meta name="copyright" content="{{site.author.name}}" />
+    <link rel="author" href="{{site.author.name}}" />
+    <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+    <meta property="og:site_name" content="{{site.author.name}}" />
+    <meta property="og:region" content="BW" />
+    <meta property="og:country-name" content="DE" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:type" content="website" />
+    <meta name="dcterms.title" content="{{ page.title }}" />
+    <meta name="dcterms.rights" content="Copyright {{site.author.name}}" />
+    <meta name="dcterms.identifier" content="{{site.production_url}}" />
+    <meta name="dcterms.creator" content="{{site.author.name}}" />
+    <meta name="dcterms.format" content="text/html" />
+    <meta name="dcterms.subject" content="{{page.tags}}" />
+    <meta name="dcterms.description" content="{{ page.description }}" />
+    <meta property="twitter:site" content="{{site.author.twitter}}" />
+    <meta property="twitter:creator" content="{{site.author.twitter}}" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{page.title}}" />
+    <meta property="twitter:description" content="{{site.author.twitter}}" />
+    <!-- Update these with your own images
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
   </head>
 
   <body>
-
     <div class="topbar">
       <div class="fill">
         <div class="container">
@@ -49,41 +73,36 @@
     </div>
 
     <div class="container">
-
-      <div class="content">
-        {{ content }}
-      </div>
-
-      <footer>
-      
-	  <p><a href="mailto:{{ site.email }}">{{ site.author.email }}</a> &bullet;
-	  {% if site.author.linkedin %}
-	  {% include icon-linkedin.html id=site.author.linkedin %} 
-	  {% endif %}
-	  {% if site.author.xing %}
-	  {% include icon-xing.html id=site.author.xing %}
-	  {% endif %}
-	  {% if site.author.github %}
-	  {% include icon-github.html id=site.author.github %}
-	  {% endif %}
-	  {% if site.author.academia %}
-	  {% include icon-academia.html id=site.author.academia %}
-	  {% endif %}
-	  {% if site.author.twitter %}
-	  {% include icon-twitter.html id=site.author.twitter %}
-	  {% endif %}
-	  {% if site.author.flickr_username and site.author.flickr %}
-	  {% include icon-flickr.html id=site.author.flickr %}
-	  {% endif %}</p>
-          
-        <p class="copyright">&copy; {{ site.author.name }} 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
+        <div class="content">
+            {{ content }}
+        </div>
+        <footer>
+            <p><a href="mailto:{{ site.email }}">{{ site.author.email }}</a> &bullet;
+                {% if site.author.linkedin %}
+                    {% include icon-linkedin.html id=site.author.linkedin %} 
+                {% endif %}
+                {% if site.author.xing %}
+                    {% include icon-xing.html id=site.author.xing %}
+                {% endif %}
+                {% if site.author.github %}
+                    {% include icon-github.html id=site.author.github %}
+                {% endif %}
+                {% if site.author.academia %}
+                    {% include icon-academia.html id=site.author.academia %}
+                {% endif %}
+                {% if site.author.twitter %}
+                    {% include icon-twitter.html id=site.author.twitter %}
+                {% endif %}
+                {% if site.author.flickr_username and site.author.flickr %}
+                    {% include icon-flickr.html id=site.author.flickr %}
+                {% endif %}
+            </p>
+            <p class="copyright">&copy; {{ site.author.name }} 2012 
+                with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+                and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+            </p>
+        </footer>
     </div> <!-- /container -->
 
-    {% include JB/analytics %}
-  </body>
+</body>
 </html>
