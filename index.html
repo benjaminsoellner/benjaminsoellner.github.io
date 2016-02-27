@@ -23,18 +23,6 @@ tags: photography, data, data science, Benjamin S&ouml;llner, data analyst, inte
 </div>
 </div>
 
-
-{% for post in site.posts limit:1 %}
-<div class="article">
-  <div class="feed_box">
-  <a class="btn" href="rss.xml"><span class="icon fa fa-rss"></span>RSS Feed</a>
-  </div>
-  <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-  <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></h1>
-  {{ post.content }}
-</div>
-{% endfor %}
-
 <div class="tiles">
 <h1>Cool Creative Projects I Worked On</h1>
 <ul>
@@ -75,6 +63,17 @@ tags: photography, data, data science, Benjamin S&ouml;llner, data analyst, inte
   </li>
 </ul>
 </div>
+
+{% for post in site.posts limit:1 %}
+<div class="article">
+  <div class="feed_box">
+  <a class="btn" href="rss.xml"><span class="icon fa fa-rss"></span>RSS Feed</a>
+  </div>
+  <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+  <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></h1>
+  {{ post.content }}
+</div>
+{% endfor %}
 
 {% capture diff %}{{ site.posts | size | minus:2 }}{% endcapture %}
 {% unless diff contains '-' %}
