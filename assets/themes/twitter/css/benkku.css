@@ -18,7 +18,7 @@ a.btn:hover, a.btn:active, a.btn:focus { text-decoration: none; }
 .feed_box .btn { font-size: 1.2em; font-weight: bold; }
 
 /* Pagination */
-.pagination li { border-radius: 3px; } 
+.pagination li { border-radius: 3px; }
 .pagination a { color: black; background: #eee; }
 .pagination a:hover { color: #ED7D31; background: #eee; text-decoration: none; }
 
@@ -43,7 +43,7 @@ div.banner img { border-bottom: 1px solid #888; }
 div.banner div { position: absolute; top: 280px; left: 20px; width: 450px; height: 90px; background: rgba(255,255,255,0.8); -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.5);box-shadow:0 1px 3px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.5); padding: 10px; }
 
 /* In Site Menu Section */
-.tiles { margin-left: -20px; margin-right: -20px; margin-bottom: 10px; 
+.tiles { margin-left: -20px; margin-right: -20px; margin-bottom: 10px;
   padding-left: 20px; padding-right: 2px; border-top: 1px solid rgba(0,0,0,.15); border-bottom: 1px solid rgba(0,0,0,.15);
   background-color:rgba(249, 214, 191);
   background-image:-khtml-gradient(linear, left top, left bottom, from(rgba(237, 125, 49, 0.15)), to(rgba(241, 158, 101, 0.15)));
@@ -61,13 +61,16 @@ div.banner div { position: absolute; top: 280px; left: 20px; width: 450px; heigh
 .tiles li {
   height: 160px; width: 168px; padding: 10px; text-align: center; margin: 0px 20px 20px 0px; background: white; position: relative; float: left; display: block; list-style-type: none;
   -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  
-} 
+}
+.tiles li.huge { height: 340px; width: 356px; padding: 20px; }
+.tiles li.huge img { padding-top: 35px; padding-bottom: 5px; margin: 0px 30px 30p }
+.tiles li.huge a { padding-bottom: 5px; }
 .tiles li img { display: block; margin: auto; padding-top: 5px; padding-bottom: 2px; }
 .tiles li a.title { font-weight: bold; display: block; margin-bottom: 5px; color: black; }
 .tiles li a.title:hover, .tiles li a.title:active { color: #ED7D31 }
 .tiles:after {  content: ""; display: table; clear: both; }
 .tiles li a { text-decoration: none; color: #888888 }
+.tiles li a small { color: black; }
 .tiles li a:hover, .tiles li a:active { color: #F19E65 }
 .tiles small { color: #888888; }
 .tiles li.one-liner { display: inline-block;  line-height: 160px; }
