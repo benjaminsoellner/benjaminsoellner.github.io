@@ -42,6 +42,12 @@ div.banner { position: relative; margin: -20px -20px 0px -20px; }
 div.banner img { border-bottom: 1px solid #888; }
 div.banner div { position: absolute; top: 280px; left: 20px; width: 450px; height: 90px; background: rgba(255,255,255,0.8); -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.5);box-shadow:0 1px 3px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.5); padding: 10px; }
 
+/* Action Segment */
+.action { margin: 0px -20px 0px -20px; padding: 10px 20px 10px 20px; color: white; background-color:#ED7D31;background-image:-khtml-gradient(linear, left top, left bottom, from(#ED7D31), to(#F19E65));background-image:-moz-linear-gradient(top, #ED7D31, #F19E65);background-image:-ms-linear-gradient(top, #ED7D31, #F19E65);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ED7D31), color-stop(100%, #F19E65));background-image:-webkit-linear-gradient(top, #ED7D31, #F19E65);background-image:-o-linear-gradient(top, #ED7D31, #F19E65);background-image:linear-gradient(top, #ED7D31, #F19E65);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ED7D31', endColorstr='#F19E65', GradientType=0); }
+.action form { margin: 0px; }
+.action .call { position: relative; top: 5px; font-size: 14pt; padding-top: 5px; }
+.action .mc-field-group { margin: 0px; }
+
 /* In Site Menu Section */
 .tiles { margin-left: -20px; margin-right: -20px; margin-bottom: 10px;
   padding-left: 20px; padding-right: 2px; border-top: 1px solid rgba(0,0,0,.15); border-bottom: 1px solid rgba(0,0,0,.15);
