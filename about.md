@@ -15,7 +15,7 @@ In my freetime, I am a passionate photographer, mountaineer and social dancer.
 * **{% include icon-xing.html username="Benjamin_Soellner" id="Benjamin_Soellner" %} on Xing** - professional network in Germany<br />
 * **{% include icon-github.html username="benjaminsoellner" id="benjaminsoellner" %} on GitHub** - coding projects<br />
 * **{% include icon-academia.html username="BenjaminSoellner" id="BenjaminSoellner" %} on Academia.edu** - papers and publications <br />
-* **{% include icon-twitter.html username="qwertzuhr" id="qwertzuhr" %} on Twitter** - stream of conciousness<br />
+* **{% include icon-twitter.html username="bensoellner" id="bensoellner" %} on Twitter** - stream of conciousness<br />
 * **{% include icon-flickr.html username="unclebenjamin" id="61423571@N00" %} on Flickr** - photography<br />
 
 This page is made with:
