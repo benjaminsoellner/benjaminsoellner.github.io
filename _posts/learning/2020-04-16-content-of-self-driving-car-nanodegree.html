@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "My Experience with the Udacity Self Driving Car Nanodegree"
+date:   2020-04-16 12:00:00 +0100
+categories: learning
+tags: learning udacity growth
+subtitle: "A Summary"
+description: "Links to finished Projects and my personal insights"
+---
+
+<p>In year 2018 I completed the Udacity Self Driving Car Nanodegree which allowed me to enter the career as Self Driving Car Engineer.</p>
+
+<p><a class="btn" href="http://tinyurl.com/udasdcBSpdf"><span class="icon fa fa-file-pdf-o"></span><strong>Get My Experience in Detail in this PDF-Slideshow.</strong></a></p>
+
+<p>Below a list of the various coding projects I worked on during the project. Click one to go to the respective GitHub project:</p>
+
+<dl class="pictured">
+    <dt><a href="https://github.com/benjaminsoellner/CarND_01_FindingLaneLines"><img src="/assets/project_carnd_1_finding_lane_lines.gif" width="54" height="40" />Finding Lane Lines</a></dt>
+    <dd>Already during the second week of the Nanodegree a simple lane finding algorithm based on Edge Detection and Huff Transformations is developed in Python Notebooks.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_02_TrafficSignClassifier"><img src="/assets/project_carnd_2_traffic_sign_classifier.gif" width="54" height="40" />Traffic Sign Classifier</a></dt>
+    <dd>A traffic sign classifier with a modified LeNet-5 Network architecture is trained and tested on the "German Traffic Sign Dataset" with Tensorflow.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_03_BehavioralCloningDriving"><img src="/assets/project_carnd_3_behavioral_cloning.gif" width="54" height="40" />Behavioral Cloning</a></dt>
+    <dd>Keras + Tensorflow is used to train a Modified Nvidia Network from video images of a simulated 3D-world and respective control inputs. The classifier can later drive the car itself in the simulated environment.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_04_AdvancedLaneFinding"><img src="/assets/project_carnd_4_advanced_lane_finding.gif" width="54" height="40" />Advanced Lane Finding</a></dt>
+    <dd>The very first project is revisited. Real-world metrics like curve radius and offset from lane center are added. Also, lens corrections and a more stable lane tracing algorithm (based on proximity search on previous images) are added.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_05_VehicleDetectionTracking"><img src="/assets/project_carnd_5_vehicle_detection_and_tracking.gif" width="54" height="40" />Vehicle Detection and Tracking</a></dt>
+    <dd>A support vector machine is trained to recognize cars based on "Hog features" and Histogram features. This SVM is convoluted with the video frames manually using different kernel sizes in order to detect cars.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_06_ExtendedKalmanFilters"><img src="/assets/project_carnd_6_extended_kalman_filters.gif" width="54" height="40" />Extended Kalman Filters</a></dt>
+    <dd>Extended Kalman Filters allow combining various uncertain measurements over time into a (more) certain one. A basic Kalman filter that combines radar and lidar in a 2D-world is implemented in C++.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_07_UnscentedKalmanFilters"><img src="/assets/project_carnd_7_unscented_kalman_filters.gif" width="54" height="40" />Unscented Kalman Filters</a></dt>
+    <dd>Unscented Kalman Filters are like Extended Kalman Filters, but instead of using Jacobian Matrizes to linearize the gaussian distribution, they sample by determine well-chosen "sigma points".</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_08_LocalizationKidnappedVehicle"><img src="/assets/project_carnd_8_localization_particle_filters.gif" width="54" height="40" />Localization: Particle Filters</a></dt>
+    <dd>In order to improve on GPS-localization, Particle Filters can determine more precisely where a vehicle is based on observed distances to landmarks. A 2D-particle filter was implemented with this project.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_09_PIDController"><img src="/assets/project_carnd_9_pid_controllers.gif" width="54" height="40" />PID Controllers</a></dt>
+    <dd>Another C++ project. PID controllers are a fundamental algorithm from control theory. They control actuators of vehicles towards a target trajectory only by observing the previous error (P) as well as a differential (D) and integral (I) term.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_10_ModelPredictiveControl"><img src="/assets/project_carnd_10_model_predictive_control.gif" width="54" height="40" />Model Predictive Control</a></dt>
+    <dd>Yet another C++ project. Predictive Controllers improve on PID controllers by modelling a simulated trajectory close along multiple future waypoints taking into account physical constraints and optimizing for the right control inputs with an optimizer (here: "ipopt").</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_11_PathPlanning"><img src="/assets/project_carnd_11_path_planning.gif" width="54" height="40" />Path Planning</a></dt>
+    <dd>With a C++ program, steer a car in the Udacity Simulator by reacting correctly to cars in the surrounding, changing lanes or speeding up / slowing down according to specification.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_12_SemanticSegmentation"><img src="/assets/project_carnd_12_advanced_deep_learning.gif" width="54" height="40" />Advanced Deep Learning</a></dt>
+    <dd>As one elective (the other one being "Vehicle Saftety") a Fully Convolutional Neural Network is implemented which can classify contents of a camera image on a pixel level (Semantic Segmentation). The project also includes optimizing Neural Networks with TensorFlow for embedded systems.</dd>
+    <dt><a href="https://github.com/benjaminsoellner/CarND_13_CapstoneVehicleIntegration"><img src="/assets/project_carnd_14_system_integration.gif" width="54" height="40" />System Integration</a></dt>
+    <dd>Finally, putting everything together with ROS (Robot Operating System). In a team of 5, a PID-Controller, Path Planner and Traffic Light Classifier are implemented as ROS nodes and executed on the real Udacity Self Driving Car.</dd>
+</ul>

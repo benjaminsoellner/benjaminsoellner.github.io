@@ -6,10 +6,12 @@ header : About
 group: navigation_left
 ---
 
-My name is Benjamin and I work as a service manager in IT integration for a large
-german automotive company. My talent is in the area of vizualizing and communicating
-vast amounts of data and complex concepts and relationships.
-In my freetime, I am a passionate photographer, mountaineer and social dancer.
+My name is Benjamin and I work as a self-driving car engineer for a large
+german automotive company. I have worked with data handling since starting my 
+professional career in 2010 with various stations in IT and R&D.
+My talent is in the area of vizualizing and communicating vast amounts of data and complex 
+concepts and relationships.
+In my freetime, I am a passionate photographer, mountaineer and outdoor enthusiast.
 
 * **{% include icon-linkedin.html username="benjaminsoellner" id="benjaminsoellner" %} on LinkedIn** - professional network<br />
 * **{% include icon-xing.html username="Benjamin_Soellner" id="Benjamin_Soellner" %} on Xing** - professional network in Germany<br />
@@ -25,5 +27,4 @@ This page is made with:
 
 <div style="margin-bottom: 1em; font-weight: bold;">
 <a class="btn" href="resume.pdf"><span class="icon fa fa-file-pdf-o"></span> Get Resume as PDF file</a>
-<a class="btn" href="resume.html"><span class="icon fa fa-globe"></span> Read Web Version</a>
 </div>

@@ -1,54 +1,37 @@
 ---
 layout: page
 title: Benjamin S&ouml;llner
-subtitle: Blog &amp; Portfolio of a Curious Person
-description: Benjamin S&ouml;llner - multimedia computer scientist, integrator of IT, people and data, outdoor globetrotter, amateur photographer
+subtitle: Blog &amp; Portfolio
+description: Benjamin S&ouml;llner - big data &amp; self driving cars
 tags: photography, data, data science, Benjamin S&ouml;llner, data analyst, integration, IT integration, information technology, visualization, multimedia computer science, projects, portfolio, blog
 ---
 {% include JB/setup %}
 <div class="banner" style="width: 860px; height: 415px">
 <img src="assets/calmlandingpage.jpg" alt="Banner image from Sweden" width="860" height="415" />
 <div class="banner-text">
-  <p>Benjamin S&ouml;llner: multimedia computer scientist, integrator of data, IT and people, social dancer,
-  amateur photographer and outdoor globetrotter.</p>
+  <p>Benjamin S&ouml;llner: Big Data & Self-Driving Cars</p>
   <p>
   {% include icon-linkedin.html username="LinkedIn" id="benjaminsoellner" %} &bullet;
   {% include icon-github.html username="GitHub" id="benjaminsoellner" %} &bullet;
-  {% include icon-academia.html username="Academia" id="BenjaminSoellner" %} &bullet;
-  {% include icon-twitter.html username="Twitter" id="bensoellner" %} &bullet;
-  {% include icon-flickr.html username="Flickr" id="61423571@N00" %} &bullet;
   <a href="about.html"><strong>more...</strong></a>
   </p>
-  <p><em>Picture: L&acirc;ngberget, Sweden on New Year's Eve 2015/2016</em></p>
 </div>
-</div>
-
-<div class="action">
-  <!-- Begin MailChimp Signup Form -->
-  <div id="mc_embed_signup">
-  <form action="//benkku.us13.list-manage.com/subscribe/post?u=ca5da383b5cfe2819febc436c&amp;id=84c65f892a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>
-    <div class="mc-field-group clearfix">
-      <span class="call">Sign up for my newsletter about new creative projects!</span>
-      <div class="pull-right">
-        <input type="email" placeholder="your@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn button-default">
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ca5da383b5cfe2819febc436c_84c65f892a" tabindex="-1" value=""></div>
-      </div>
-    </div>
-  </form>
-  </div>
-
-  <!--End mc_embed_signup-->
-
 </div>
 
 <div class="tiles">
 <h1>Cool Creative Projects I Worked On</h1>
 <ul>
+  <li class="huge">
+    <a href="/learning/2020/04/16/content-of-self-driving-car-nanodegree" class="title"><img src="assets/project_self_driving_car_nanodegree.gif" width="252" height="197" />Self Driving Car Engineer Nanodegree<br />
+      <small>Experience and Projects at Udacity Courses and my Journey to Become a Self Driving Car Engineer</small></a>
+    <a href="https://tinyurl.com/udasdcBSpdf"><span class="icon fa fa-file-pdf-o"></span> See Slideshow</a></a>
+  </li>
+  <li class="huge">
+    <a href="https://github.com/benjaminsoellner/quietpaper" class="title"><img src="assets/project_quietpaper_display.gif" width="252" height="197" />Quietpaper - IoT Smart Home Project<br />
+      <small>Raspberry-Pi-based E-Paper Display to show room climate, public transport, laundry devices, calendars and more</small></a>
+    <a href="https://github.com/benjaminsoellner/quietpaper"><span class="fa fa-github icon"></span>Github + Docs</a> &nbsp;
+    <a href="https://github.com/benjaminsoellner/quietpaper/archive/master.zip"><span class="fa fa-download icon"></span>Download</a>
+  </li>
   <li class="huge">
     <a href="https://rawgit.com/benjaminsoellner/DAND_6_VisualizeEMobilityDataInD3js/master/index.html#!/explain?showStories=1" class="title"><img src="assets/project_visualize_emobility_data.gif" width="252" height="197" />Visualize E-Mobility Battery Performance Using D3.js<br />
       <small>Going Beyond the Data Analyst Nanodegree Project with some Real-World Automotive Data</small></a>
@@ -106,9 +89,8 @@ tags: photography, data, data science, Benjamin S&ouml;llner, data analyst, inte
 
 {% capture diff %}{{ site.posts | size | minus:2 }}{% endcapture %}
 {% unless diff contains '-' %}
-<h1>Recent Blog Posts</h1>
+<h1>Other Blog Posts</h1>
 {% for post in site.posts offset:1 limit:19 %}
-  <h1>Other Recent Posts</h1>
   <span class="post-meta"></span>
   <h2>
     {{ post.date | date: "%b %-d, %Y" }}: <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{post.subtitle}}</small></small>
