@@ -31,4 +31,4 @@ Alongside all of the tangible results there were also some personal insights tha
 
 
 [dand]: https://www.udacity.com/course/data-analyst-nanodegree--nd002
-[emobviz]: https://rawgit.com/benjaminsoellner/DAND_6_VisualizeEMobilityDataInD3js/master/index.html#!/explain?showStories=1
+[emobviz]: https://benjaminsoellner.github.io/DAND_6_VisualizeEMobilityDataInD3js/index.html#!/explain?showStories=1
